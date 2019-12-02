@@ -18,7 +18,7 @@
  .dev-icons{font-size:3rem;}
  .dev-icons .list-inline-item i{color:#4b73a3}
  .dev-icons .list-inline-item i:hover{color:#202338}
- #sideNav .navbar-nav .nav-item .nav-link{font-weight:800;letter-spacing:.05rem;text-transform:uppercase}
+ #sideNav .navbar-nav .nav-item .nav-link{font-weight:800;letter-spacing:.05rem;text-transform:uppercase;}
  #sideNav .navbar-toggler:focus{outline-color:#4b73a3}
  @media (min-width:992px){
      #sideNav{text-align:center;position:fixed;top:0;left:0;display:flex;flex-direction:column;width:17rem;height:100vh}
@@ -29,7 +29,7 @@
      #sideNav .navbar-collapse .navbar-nav .nav-item{display:block}
      #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link{display:block}
  }
- section.resume-section{padding-top:5rem!important;padding-bottom:5rem!important;max-width:75rem;background-color:#f0f3ff}
+ section.resume-section{padding-top:5rem!important;padding-bottom:5rem!important;max-width:110rem;background-color:#f0f3ff}
  section.resume-section .resume-item .resume-date{min-width:none}
  @media (min-width:768px){
      section.resume-section{min-height:100vh}
