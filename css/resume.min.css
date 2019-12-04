@@ -31,6 +31,7 @@
  }
  section.resume-section{padding-top:5rem!important;padding-bottom:5rem!important;max-width:110rem;background-color:#f0f3ff}
  section.resume-section .resume-item .resume-date{min-width:none}
+ .img-resume{max-width:500px;}
  @media (min-width:768px){
      section.resume-section{min-height:100vh}
      section.resume-section .resume-item .resume-date{min-width:18rem}
