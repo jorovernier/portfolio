@@ -32,9 +32,17 @@
  section.resume-section{padding-top:5rem!important;padding-bottom:5rem!important;max-width:110rem;background-color:#f0f3ff}
  section.resume-section .resume-item .resume-date{min-width:none}
  .img-resume{max-width:500px;}
+ @media (min-width:1495px){
+    section.resume-section{min-height:100vh}
+    section.resume-section .resume-item .resume-date{min-width:5rem}
+}
+@media (min-width:1670px){
+    section.resume-section{min-height:100vh}
+    section.resume-section .resume-item .resume-date{min-width:18rem}
+}
  @media (min-width:768px){
      section.resume-section{min-height:100vh}
-     section.resume-section .resume-item .resume-date{min-width:18rem}
+     section.resume-section .resume-item .resume-date{min-width:none}
  }
  @media (min-width:992px){
      section.resume-section{padding-top:3rem!important;padding-bottom:3rem!important}
