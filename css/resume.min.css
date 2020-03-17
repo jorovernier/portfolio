@@ -15,22 +15,29 @@
  .social-icons a{display:inline-block;height:3.5rem;width:3.5rem;background-color:#202338;color:#f0f3ff!important;border-radius:100%;text-align:center;font-size:1.5rem;line-height:3.5rem;margin-right:1rem}
  .social-icons a:last-child{margin-right:0}
  .social-icons a:hover{background-color:#4b73a3;}
+ .social-icons a{margin-right:1.5rem;}
  .dev-icons{font-size:3rem;}
- .dev-icons .list-inline-item i{color:#4b73a3}
- .dev-icons .list-inline-item i:hover{color:#202338}
+ .dev-icons .list-inline-item {margin-right:1rem;}
+ .dev-icons .list-inline-item i{color:#4b73a3;display:flex;justify-content:center;}
+ .dev-icons .list-inline-item i:hover{color:#202338;}
+ .name-plate {color:#202338;font-size:1rem;text-align:center;}
  #sideNav .navbar-nav .nav-item .nav-link{font-weight:800;letter-spacing:.05rem;text-transform:uppercase;}
  #sideNav .navbar-toggler:focus{outline-color:#4b73a3}
  @media (min-width:992px){
      #sideNav{text-align:center;position:fixed;top:0;left:0;display:flex;flex-direction:column;width:17rem;height:100vh}
-     #sideNav .navbar-brand{display:flex;margin:auto auto 0;padding:.5rem}
+     #sideNav .navbar-brand{display:flex;align-items:center;max-height:10rem;max-width:10rem;margin:auto auto 0;}
      #sideNav .navbar-brand .img-profile{max-width:10rem;max-height:10rem;border:.5rem solid rgba(255, 255, 255, 0.2)}
+     #sideNav .navbar-brand .img-profile:hover{background-color: #4b73a3;}
      #sideNav .navbar-collapse{display:flex;align-items:flex-start;flex-grow:0;width:100%;margin-bottom:auto}
      #sideNav .navbar-collapse .navbar-nav{flex-direction:column;width:100%}
      #sideNav .navbar-collapse .navbar-nav .nav-item{display:block}
      #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link{display:block}
  }
  section.resume-section{padding-top:5rem!important;padding-bottom:5rem!important;max-width:110rem;background-color:#f0f3ff}
+ section.resume-section .mega-header{font-size:160px;}
+ section.resume-section .diff{color:#1f528d;}
  section.resume-section .resume-item .resume-date{min-width:none}
+ section.resume-section .resume-item .resume-content .linker{text-decoration: underline;}
  .img-resume{max-width:500px;}
  @media (min-width:1495px){
     section.resume-section{min-height:100vh}
