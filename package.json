@@ -34,6 +34,7 @@
         "jquery": "^3.5.0",
         "jquery.easing": "^1.4.1",
         "kind-of": "^6.0.3",
+        "lodash": "^4.17.19",
         "minimist": "^1.2.5"
     },
     "devDependencies": {
