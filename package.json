@@ -30,12 +30,22 @@
     },
     "dependencies": {
         "@fortawesome/fontawesome-free": "5.10.2",
+        "axios": "^0.21.1",
         "bootstrap": "4.3.1",
-        "jquery": "^3.5.0",
+        "bufferutil": "^4.0.1",
+        "http-proxy": "^1.18.1",
+        "ini": "^2.0.0",
+        "jquery": "^3.5.1",
         "jquery.easing": "^1.4.1",
         "kind-of": "^6.0.3",
-        "lodash": "^4.17.19",
-        "minimist": "^1.2.5"
+        "lodash": "^4.17.20",
+        "minimist": "^1.2.5",
+        "node-sass": "^5.0.0",
+        "object-path": "^0.11.5",
+        "popper.js": "^1.16.1",
+        "socket.io": "^2.4.1",
+        "utf-8-validate": "^5.0.2",
+        "yargs-parser": "^5.0.0-security.0"
     },
     "devDependencies": {
         "browser-sync": "2.26.7",
