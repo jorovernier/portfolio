@@ -48,7 +48,7 @@
         "popper.js": "^1.16.1",
         "postcss": "^8.3.4",
         "socket.io": "^3.1.1",
-        "trim-newlines": "^1.0.0",
+        "trim-newlines": "^3.0.1",
         "ua-parser-js": "^0.7.17",
         "utf-8-validate": "^5.0.2",
         "xmlhttprequest-ssl": "^1.5.5",
