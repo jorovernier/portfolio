@@ -30,6 +30,7 @@
     },
     "dependencies": {
         "@fortawesome/fontawesome-free": "5.10.2",
+        "ansi-regex": "^6.0.1",
         "axios": "^0.21.4",
         "bootstrap": "4.3.1",
         "browserslist": "^4.16.6",
@@ -48,6 +49,7 @@
         "path-parse": "^1.0.7",
         "popper.js": "^1.16.1",
         "postcss": "^8.3.4",
+        "set-value": "^4.1.0",
         "socket.io": "^3.1.1",
         "socket.io-parser": "^4.0.4",
         "tar": "^6.1.10",
