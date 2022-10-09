@@ -63,23 +63,3 @@
      .text-primary {font-size: 120px;}
  }
 .bg-primary{background-color:#1f528d!important}.text-primary{color:#4b73a3!important}a{color:#1f528d}a:active,a:focus,a:hover{color:#202338}
-
-.cheat-applied{
-    position: fixed;
-    bottom: 0px;
-    height: 10%;
-    width: 100vw;
-}
-
-@keyframes example {
-    from {left:-5%;}
-    to {left:100%;}
-  }
-
-#gif{
-    position: absolute;
-    height: 100%;
-    animation-name: example;
-    animation-duration: 10s;
-    animation-iteration-count: 1;
-}
