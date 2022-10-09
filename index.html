@@ -20,7 +20,7 @@
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
 
   <!-- Custom icons for skills -->
-  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
 
   <!-- Custom styles for this template -->
   <link href="css/resume.min.css" rel="stylesheet">
@@ -222,11 +222,15 @@
           </li>
         </ul>
 
-        <div class="subheading mb-3">Libraries/Platforms</div>
+        <div class="subheading mb-3">Libraries/Frameworks</div>
         <ul class="list-inline dev-icons">
           <li class="list-inline-item">
             <i class="fab fa-react"></i>
             <p class="name-plate">React</p>
+          </li>
+          <li class="list-inline-item">
+            <i class="devicon-redux-original"></i>
+            <p class="name-plate">Redux</p>
           </li>
           <li class="list-inline-item">
             <i class="fab fa-node-js"></i>
@@ -235,7 +239,31 @@
           <li class="list-inline-item">
             <i class="fab devicon-express-original"></i>
             <p class="name-plate">ExpressJS</p>
-        </li>
+          </li>
+          <li class="list-inline-item">
+            <i class="devicon-sequelize-plain"></i>
+            <p class="name-plate">Sequelize</p>
+          </li>
+          <li class="list-inline-item">
+            <i class="devicon-bootstrap-plain"></i>
+            <p class="name-plate">Bootstrap</p>
+          </li>
+        </ul>
+
+        <div class="subheading mb-3">Testing</div>
+        <ul class="list-inline dev-icons">
+          <li class="list-inline-item">
+            <i class="devicon-jest-plain"></i>
+            <p class="name-plate">Jest</p>
+          </li>
+          <li class="list-inline-item">
+            <i class="devicon-selenium-original"></i>
+            <p class="name-plate">Selenium</p>
+          </li>
+          <li class="list-inline-item">
+            <i class="devicon-chrome-plain"></i>
+            <p class="name-plate">Chromedriver</p>
+          </li>
         </ul>
 
         <div class="subheading mb-3">DB Management</div>
@@ -269,7 +297,7 @@
         <div class="subheading mb-3">Tools</div>
         <ul class="list-inline dev-icons">
           <li class="list-inline-item">
-            <i class="fab devicon-visualstudio-plain"></i>
+            <i class="devicon-vscode-plain"></i>
             <p class="name-plate">VSCode</p>
           </li>
           <li class="list-inline-item">
@@ -283,6 +311,18 @@
           <li class="list-inline-item">
             <i class="fab devicon-nginx-original"></i>
             <p class="name-plate">Nginx</p>
+          </li>
+          <li class="list-inline-item">
+            <i class="devicon-digitalocean-plain"></i>
+            <p class="name-plate">Digital Ocean</p>
+          </li>
+          <li class="list-inline-item">
+            <i class="devicon-figma-plain"></i>
+            <p class="name-plate">Figma</p>
+          </li>
+          <li class="list-inline-item">
+            <i class="devicon-ssh-original"></i>
+            <p class="name-plate">SSH</p>
           </li>
         </ul>
 
@@ -320,6 +360,8 @@
 
   </div>
 
+  <footer></footer>
+
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -329,6 +371,47 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/resume.min.js"></script>
+
+  <script type="text/javascript">
+    let keyNums = {
+      37: 'left',
+      38: 'up',
+      39: 'right',
+      40: 'down',
+      65: 'a',
+      66: 'b'
+    };
+    let konamiCode = ['up', 'up', 'down', 'down', 'left', 'right', 'left', 'right', 'b', 'a'];
+    let position = 0;
+
+    document.addEventListener('keydown', (e) => {
+      let key = keyNums[e.keyCode];
+      let requiredKey = konamiCode[position];
+      if (key === requiredKey) {
+        position++;
+        if (position === konamiCode.length) {
+          surprise();
+          position = 0;
+        }
+      } else {
+        position = 0;
+      }
+    });
+    function surprise() {
+      let gifs = ['https://www.gifcen.com/wp-content/uploads/2022/04/among-us-gif-1.gif','https://img1.picmix.com/output/stamp/normal/4/8/0/4/1604084_93e2e.gif','https://media.baamboozle.com/uploads/images/281249/1625485841_290497_url.gif', 'https://slm-assets.secondlife.com/assets/15942903/original/Woofer.gif?1483240862', 'https://media.tenor.com/NYzVC0OHCbwAAAAj/pug-dog-dancing.gif']
+      let random = Math.floor(Math.random() * (gifs.length - 0) + 0)
+      let footer = document.querySelector('footer')
+      footer.classList.add('cheat-applied')
+      let gif = document.createElement('img')
+      gif.setAttribute('id', 'gif')
+      gif.setAttribute('src', `${gifs[random]}`)
+      footer.appendChild(gif)
+      setTimeout(() => {
+        footer.classList.remove('cheat-applied')
+        gif.remove()
+      }, 6000)
+    }
+  </script>
 
 </body>
 
