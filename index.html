@@ -48,10 +48,10 @@
           <a class="nav-link js-scroll-trigger" href="#about">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#awards">Awards</a>
+          <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
+          <a class="nav-link js-scroll-trigger" href="#awards">Awards</a>
         </li>
         <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
@@ -80,21 +80,7 @@
         <h1 class="mb-0">About
           <span class="text-primary">Me</span>
         </h1>
-        <p class="lead mb-5">I am a Full-Stack Software Engineer currently instructing aspiring web developers at Devmountain. I am fueled by taking challenges head on and making them work. I put great thought into my planning but don't get discouraged if something doesn't work out or needs to be changed. That being said, I am a very "go with the flow" type of person and I don't crack under pressure easily. In my free time I like to play video games, collect rare CDs, and spend time with my family and my cats. I also enjoy fixing and modifying electronics by replacing/swapping hardware and installing additional software.</p>
-      </div>
-    </section>
-
-    <!-- <hr class="m-0"> -->
-
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="awards">
-      <div class="w-100">
-        <h2 class="mb-5">Awards
-          <span class="text-primary"></span>
-        </h2>
-        <div class="flex-row">
-          <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="a6d2e8c6-5c6b-490f-81bb-aaf3b7ef0bcf" data-share-badge-host="https://www.youracclaim.com"></div><script type="text/javascript" async src="//cdn.youracclaim.com/assets/utilities/embed.js"></script>
-          <p class="social-distancing lead mb-5">This badge shows demonstrated strength and mastery in Javascript-based Web Development. Earning this award is equivalent to graduating the DevMountain Web Development course with honors.</p>
-        </div>
+        <p class="lead mb-5">I am a Full-Stack React Web Developer with many projects under my belt. Previously, I was an instructor at Devmountain entrusted with the academic futures of hundreds of other developers. I am fueled by taking challenges head on and creating fully functional products. I put great thought into my coding but don't get discouraged if something doesn't work out or needs to be changed. That being said, I am a very "go with the flow" type of person and I don't crack under pressure easily. In my free time I like to play video games, go to the gym, build LEGO sets, and spend time with my friends. I have two lovely cats that I love very much.</p>
       </div>
     </section>
 
@@ -196,6 +182,20 @@
           </div>
         </div>
 
+      </div>
+    </section>
+
+    <!-- <hr class="m-0"> -->
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="awards">
+      <div class="w-100">
+        <h2 class="mb-5">Awards
+          <span class="text-primary"></span>
+        </h2>
+        <div class="flex-row">
+          <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="a6d2e8c6-5c6b-490f-81bb-aaf3b7ef0bcf" data-share-badge-host="https://www.youracclaim.com"></div><script type="text/javascript" async src="//cdn.youracclaim.com/assets/utilities/embed.js"></script>
+          <p class="social-distancing lead mb-5">This badge shows demonstrated strength and mastery in Javascript-based Web Development. Earning this award is equivalent to graduating the DevMountain Web Development course with honors.</p>
+        </div>
       </div>
     </section>
 
@@ -391,6 +391,10 @@
             <i class="fas fa-download"></i>
             <p class="name-plate">Resume</p>
           </a>
+          <a id="hint">
+            <i class="fas fa-question"></i>
+            <p class="name-plate">Huh?</p>
+          </a>
         </div>
       </div>
     </section>
@@ -432,6 +436,13 @@
   </style>
 
   <script type="text/javascript">
+
+    function hintAlert(){
+      alert('Try the Konami code!')
+    }
+
+    document.getElementById('hint').addEventListener('click', hintAlert)
+
     let keyNums = {
       37: 'left',
       38: 'up',

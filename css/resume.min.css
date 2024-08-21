@@ -63,3 +63,5 @@
      .text-primary {font-size: 120px;}
  }
 .bg-primary{background-color:#1f528d!important}.text-primary{color:#4b73a3!important}a{color:#1f528d}a:active,a:focus,a:hover{color:#202338}
+#hint{opacity: 0;}
+#hint:hover{opacity: 1;}
